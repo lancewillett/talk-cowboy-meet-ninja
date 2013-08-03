@@ -11,7 +11,7 @@ body:before {
   right: 3%;
   height: 100px;
   width: 100px;
-  background: url(http://www.html5rocks.com/static/images/identity/HTML5_Badge_128.png) no-repeat 50% 50%;
+  background: url(http://www.html5rocks.com/static/lib/img/identity/HTML5_Badge_128.png) no-repeat 50% 50%;
   background-size: contain;
   z-index: 10;
   opacity: 0.1;
@@ -46,7 +46,7 @@ pre {
 }
 </style>
 
-<h1><img src="images/io2012_logo.png"> HTML5 Slide Template</h1>
+<h1><img src="lib/img/io2012_logo.png"> HTML5 Slide Template</h1>
 
 ## Configuring the slides
 
