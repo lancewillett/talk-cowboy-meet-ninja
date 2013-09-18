@@ -176,7 +176,7 @@ URL: https://code.google.com/p/io-2012-slides
       <h2>Add a section</h2>
     </hgroup>
     <article>
-       <iframe src="examples/embeds/add-section.html" class="embed"></iframe>
+       <iframe src="examples/embeds/1-add-section.html" class="embed"></iframe>
     </article>
   </slide>
 
@@ -185,7 +185,7 @@ URL: https://code.google.com/p/io-2012-slides
       <h2>Add a setting</h2>
     </hgroup>
     <article>
-      <iframe src="examples/embeds/add-setting.html" class="embed"></iframe>
+      <iframe src="examples/embeds/1-add-setting.html" class="embed"></iframe>
     </article>
   </slide>
 
@@ -194,14 +194,12 @@ URL: https://code.google.com/p/io-2012-slides
       <h2>Add a control</h2>
     </hgroup>
     <article>
-      <iframe src="examples/embeds/add-control.html" class="embed"></iframe>
+      <iframe src="examples/embeds/1-add-control.html" class="embed"></iframe>
     </article>
   </slide>
 
   <slide class="segue dark">
-    <hgroup>
-      <h2>Theme Mods vs. Options</h2>
-    </hgroup>
+    <hgroup><h2>Theme Mods vs. Options</h2></hgroup>
   </slide>
 
   <slide>
@@ -213,6 +211,7 @@ URL: https://code.google.com/p/io-2012-slides
         <li>Handles array of values for you.</li>
         <li>Scopes settings to your theme.</li>
         <li>Same data structure as Option (array), but with convenience function <code>get_theme_mod</code></li>
+        <li>Think of them as invidivual options, not an array!</li>
       </ul>
       <iframe src="examples/embeds/2-theme-mod.html" class="embed"></iframe>
     </article>
@@ -237,7 +236,7 @@ URL: https://code.google.com/p/io-2012-slides
     </hgroup>
     <article>
       <ul>
-        <li>Many options in one <code>wp_options</code> setting.</li>
+        <li>Many settings in one <code>wp_options</code> row.</li>
         <li>Think of it as an array, not serialized data!</li>
         <li>Basically the same as <code>theme_mod</code>, but generic.</li>
       </ul>
@@ -247,16 +246,50 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide>
     <hgroup>
-      <h2>Moar!</h2>
+      <h2>Data Structure</h2>
     </hgroup>
     <article>
       <ul>
-        <li>Use an option</li>
-        <li>PostMessage</li>
-        <li>Different kinds of controls</li>
-        <li>Styles</li>
+        <li>Serialized data is preferred.</li>
+        <li>Don't manually edit serialized data!
+          <ul><li>Unless you *really* know what you're doing</li></ul>
+        </li>
+        <li>Don't think about the serialization!
+          <ul><li>WordPress handles it for you.</li></ul>
+        </li>
       </ul>
+      <img src="lib/img/db-theme-mods-vs-options.png" style="width:auto;max-width:100%;max-height:96%;"/>
     </article>
+  </slide>
+
+  <slide class="segue dark">
+    <hgroup><h2>Use the data!</h2></hgroup>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Generated CSS</h2>
+    </hgroup>
+    <article>
+      <iframe src="examples/embeds/3-generated-css.html" class="embed"></iframe>
+    </article>
+  </slide>
+
+
+  <slide class="segue dark">
+    <hgroup><h2>postMessage</h2></hgroup>
+  </slide>
+
+  <slide class="segue dark">
+    <hgroup><h2>Controls</h2></hgroup>
+  </slide>
+
+  <slide class="segue dark">
+    <hgroup><h2>Moar Controls</h2></hgroup>
+  </slide>
+
+  <slide class="segue dark">
+    <hgroup><h2>Styles</h2></hgroup>
   </slide>
 
   <slide class="thank-you-slide segue nobackground">

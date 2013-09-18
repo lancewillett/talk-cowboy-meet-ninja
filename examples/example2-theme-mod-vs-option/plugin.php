@@ -20,7 +20,7 @@ function example2_customize_register( $wp_customize ) {
 	 */
 	$wp_customize->add_section( 'example2_section_id' , array(
 		'title'      => __( 'Example 2', 'example_theme_text_domain' ),
-		'priority'   => 5,
+		'priority'   => 2,
 	) );
 
 	/**
