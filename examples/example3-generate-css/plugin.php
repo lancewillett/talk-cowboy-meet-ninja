@@ -19,7 +19,7 @@ function example3_customize_register( $wp_customize ) {
 	 * @param string $id Section ID used to add controls to this section
 	 */
 	$wp_customize->add_section( 'example3_section_id' , array(
-		'title'      => __( 'Example 3', 'example_theme_text_domain' ),
+		'title'      => __( 'Example 3 — Generate CSS', 'example_theme_text_domain' ),
 		'priority'   => 3,
 	) );
 
@@ -31,7 +31,7 @@ function example3_customize_register( $wp_customize ) {
 	 * @example echo get_theme_mod( 'example3_header_bg_color' );
 	 * @param string $id Setting ID used to connect controls to this data
 	 */
-	$wp_customize->add_setting( 'example3_header_bg_color' , array(
+	$wp_customize->add_setting( 'example3_menu_link_color' , array(
 		'default'     => '#000000',            // Can omit.
 		'transport'   => 'refresh',            // Default; can omit. Alt value: 'postMessage'
 		'type'        => 'theme_mod',          // Default; can omit. Alt value: 'option'

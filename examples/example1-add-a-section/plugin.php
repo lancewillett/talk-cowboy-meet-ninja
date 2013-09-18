@@ -19,7 +19,7 @@ function example1_customize_register( $wp_customize ) {
 	 * @param string $id Section ID used to add controls to this section
 	 */
 	$wp_customize->add_section( 'example1_section_id' , array(
-		'title'      => __( 'Example 1', 'example_theme_text_domain' ),
+		'title'      => __( 'Example 1 — Add a Section', 'example_theme_text_domain' ),
 		'priority'   => 1, // Default: 10
 	) );
 
