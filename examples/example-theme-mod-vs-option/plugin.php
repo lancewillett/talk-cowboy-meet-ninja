@@ -26,6 +26,8 @@ function example2_customize_register( $wp_customize ) {
 	/**
 	 * Add setting (data, not user interface): Theme Mod
 	 * 
+	 * Stores value in wp_options.theme_mods_THEME-SLUG['option'] (changes with child theme)
+	 * 
 	 * @example Access with echo get_theme_mod( 'example2_setting_id_theme_mod' );
 	 * @param string $id Setting ID used to connect controls to this data
 	 */
@@ -49,6 +51,8 @@ function example2_customize_register( $wp_customize ) {
 	/**
 	 * Add setting (data, not user interface): Option
 	 * 
+	 * Stores value in wp_options.setting_id
+	 * 
 	 * @example Access with echo get_option( 'example2_setting_id_option' );
 	 * @param string $id Setting ID used to connect controls to this data
 	 */
@@ -70,7 +74,9 @@ function example2_customize_register( $wp_customize ) {
 	) ) );
 
 	/**
-	 * Add setting (data, not user interface): Option
+	 * Add setting (data, not user interface): Option Array
+	 * 
+	 * Stores value in wp_options.option_id['sub_setting']
 	 * 
 	 * @example Access with $options = get_option( 'example2_setting_id_option_array' ); echo $options['sub_setting'];
 	 * @param string $id Setting ID used to connect controls to this data
