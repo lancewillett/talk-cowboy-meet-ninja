@@ -65,6 +65,9 @@ function example4_wp_head() {
   <?php
 }
 
+/**
+ * Enqeue javascript for handling Customizer postMessage updates.
+ */
 add_action( 'customize_preview_init', 'example4_customize_preview_init' );
 function example4_customize_preview_init() {
   wp_enqueue_script( 
