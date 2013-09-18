@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Customizer Example: Theme Mod vs. Option
+Plugin Name: Customizer Example 2: Theme Mod vs. Option
 Description: Example WordPress customizer code to accompany pdclark's <a href="http://brainstormmedia.github.io/talk-wordpress-customizer">talk on the WordPress Customizer</a>.
 Version: 1.0
 Author: Brainstorm Media

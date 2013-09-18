@@ -43,9 +43,9 @@ function example3_customize_register( $wp_customize ) {
 	 * @param string $id Control ID used for HTML element ID.
 	 */
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'example3_control_id_theme_mod', array(
-		'label'        => __( 'Header Background Color', 'example_theme_text_domain' ),
+		'label'        => __( 'Menu Link Color', 'example_theme_text_domain' ),
 		'section'    => 'example3_section_id', // Match arguement 1 in $wp_customize->add_section
-		'settings'   => 'example3_header_bg_color', // Match arguement 1 in $wp_customize->add_setting
+		'settings'   => 'example3_menu_link_color', // Match arguement 1 in $wp_customize->add_setting
 	) ) );
 
 }
@@ -54,12 +54,12 @@ function example3_customize_register( $wp_customize ) {
  * Output generated CSS based on options set in the database.
  * Note that get_theme_mod allows you to set a default value.
  */
-add_action( 'wp_head', 'example3_wp_head', 999 );
+add_action( 'wp_head', 'example3_wp_head', 990 );
 function example3_wp_head() {
   ?>
-  <style>
-    #navbar .nav-menu a {
-      color: <?php echo get_theme_mod( 'example3_header_bg_color', '#000000' ) ?>;
+  <style id="example3-generate-css">
+    #navbar .nav-menu > li > a {
+      color: <?php echo get_theme_mod( 'example3_menu_link_color', '#000000' ) ?>;
     }
   </style>
   <?php
