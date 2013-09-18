@@ -20,7 +20,7 @@ function example1_customize_register( $wp_customize ) {
 	 */
 	$wp_customize->add_section( 'example1_section_id' , array(
 		'title'      => __( 'Example 1', 'example_theme_text_domain' ),
-		'priority'   => 5,
+		'priority'   => 5, // Default: 10
 	) );
 
 	/**
@@ -31,10 +31,10 @@ function example1_customize_register( $wp_customize ) {
 	 * @param string $id Setting ID used to connect controls to this data
 	 */
 	$wp_customize->add_setting( 'example1_setting_id' , array(
-		'default'     => '#000000',
-		'transport'   => 'refresh',
-		'type'        => 'theme_mod', // 'theme_mod' or 'option'
-		'capability'  => 'edit_theme_options',
+		'default'     => '#000000',            // Can omit.
+		'transport'   => 'refresh',            // Default; can omit. Alt value: 'postMessage'
+		'type'        => 'theme_mod',          // Default; can omit. Alt value: 'option'
+		'capability'  => 'edit_theme_options', // Default; can omit.
 	) );
 
 	/**

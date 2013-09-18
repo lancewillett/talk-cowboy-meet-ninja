@@ -4,3 +4,8 @@
 	background-color: transparent !important;
 	border: 0px none transparent !important;
 }
+
+.pull-left pre * {
+	left: -50px;
+	position: relative;
+}
