@@ -207,10 +207,41 @@ URL: https://code.google.com/p/io-2012-slides
   <slide>
     <hgroup>
       <h2>Theme Mod</h2>
-      <h3>Default behavior</h3>
     </hgroup>
     <article>
-      <iframe src="examples/embeds/theme-mod.html" class="embed"></iframe>
+      <ul>
+        <li>Handles array of values for you.</li>
+        <li>Scopes settings to your theme.</li>
+        <li>Same data structure as Option (array), but with convenience function <code>get_theme_mod</code></li>
+      </ul>
+      <iframe src="examples/embeds/2-theme-mod.html" class="embed"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Option</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Single, generic setting.</li>
+        <li>Typically better to use an array.</li>
+      </ul>
+      <iframe src="examples/embeds/2-option.html" class="embed"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Option (array)</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Many options in one <code>wp_options</code> setting.</li>
+        <li>Think of it as an array, not serialized data!</li>
+        <li>Basically the same as <code>theme_mod</code>, but generic.</li>
+      </ul>
+      <iframe src="examples/embeds/2-option-array.html" class="embed"></iframe>
     </article>
   </slide>
 

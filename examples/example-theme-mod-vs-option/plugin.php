@@ -28,7 +28,7 @@ function example2_customize_register( $wp_customize ) {
 	 * 
 	 * Stores value in wp_options.theme_mods_THEME-SLUG['option'] (changes with child theme)
 	 * 
-	 * @example Access with echo get_theme_mod( 'example2_setting_id_theme_mod' );
+	 * @example echo get_theme_mod( 'example2_setting_id_theme_mod' );
 	 * @param string $id Setting ID used to connect controls to this data
 	 */
 	$wp_customize->add_setting( 'example2_setting_id_theme_mod' , array(
@@ -53,7 +53,7 @@ function example2_customize_register( $wp_customize ) {
 	 * 
 	 * Stores value in wp_options.setting_id
 	 * 
-	 * @example Access with echo get_option( 'example2_setting_id_option' );
+	 * @example echo get_option( 'example2_setting_id_option' );
 	 * @param string $id Setting ID used to connect controls to this data
 	 */
 	$wp_customize->add_setting( 'example2_setting_id_option' , array(
@@ -78,7 +78,8 @@ function example2_customize_register( $wp_customize ) {
 	 * 
 	 * Stores value in wp_options.option_id['sub_setting']
 	 * 
-	 * @example Access with $options = get_option( 'example2_setting_id_option_array' ); echo $options['sub_setting'];
+	 * @example $options = get_option( 'example2_setting_id_option_array' );
+	 *          echo $options['sub_setting'];
 	 * @param string $id Setting ID used to connect controls to this data
 	 */
 	$wp_customize->add_setting( 'example2_setting_id_option_array[sub_setting]' , array(
