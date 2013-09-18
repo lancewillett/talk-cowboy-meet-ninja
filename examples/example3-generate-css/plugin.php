@@ -56,9 +56,11 @@ function example3_customize_register( $wp_customize ) {
  */
 add_action( 'wp_head', 'example3_wp_head', 999 );
 function example3_wp_head() {
-	?>
-	<style>
-		#navbar .nav-menu a { color: <?php echo get_theme_mod( 'example3_header_bg_color', '#000000' ) ?>; }
-	</style>
-	<?php
+  ?>
+  <style>
+    #navbar .nav-menu a {
+      color: <?php echo get_theme_mod( 'example3_header_bg_color', '#000000' ) ?>;
+    }
+  </style>
+  <?php
 }
