@@ -48,14 +48,81 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide>
     <hgroup>
-      <h2>Custa-what?</h2>
+      <h2>Brainstorm Media</h2>
     </hgroup>
     <article>
       <ul>
-        <li>LIST</li>
-        <li>SUBLIST:
+        <li>Clients like:
           <ul>
-            <li>SUBLIST</li>
+            <li>The Wall Street Journal</li>
+            <li>Iomega</li>
+            <li>California Attorney General</li>
+          </ul>
+        <li>7-person web agency specializing in WordPress</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Paul Clark</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>WordPress core contributor</li>
+        <li>Developing WordPress sites since 2006 (~2.0.1)</li>
+        <li>10 plugins on WordPress.org, 20-something <a href="http://github.com/pdclark">on Github</a></li>
+        <li>Created <a href="http://wordpress.org/plugins/styles">Styles</a>, a plugin that abstracts porttions of the WordPress Customizer API.</li>
+        <li>Speaker at <a href="http://tedxtalks.ted.com/video/Getting-From-I-Have-a-Dream-to">TEDxAnchorage</a> and WordCamps in LA, Seattle, Portland, and Phoenix.
+          <ul><li>More talks: <a href="http://pdclark.com">pdclark.com</a></li></ul>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="segue dark">
+    <hgroup>
+      <h2>About the Customizer</h2>
+    </hgroup>
+    <article>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2><span style="color:#6EA8C5">Custa</span>what?</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Introduced in WordPress 3.4</li>
+        <li>Codex: <a href="https://codex.wordpress.org/Theme_Customization_API">codex.wordpress.org/Theme_Customization_API</a>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="fill nobackground">
+    <img src="lib/img/customizer.png" style="width:auto;max-width:100%;height:96%;position:absolute;top:25px;left:0;"/>
+  </slide>
+
+  <slide class="fill nobackground">
+    <img src="lib/img/customizer-notes.png" style="width:auto;max-width:100%;height:96%;position:absolute;top:25px;left:0;"/>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2><span style="color:#6EA8C5">Custa</span>why?</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Live previews</li>
+        <li>Standard interface<br/>Reduced support because users don't learn a new interface for your theme</li>
+        <li>Core API<br/>Your theme grows with WordPress</li>
+        <li>Code Reuse<br/>Benefit from controls shared by core and other developers</li>
+        <li>Extend with plugins<br/>
+          <ul>
+            <li><a href="https://github.com/x-team/wp-settings-revisions">Settings Revisions</a></li>
+            <li><a href="http://wordpress.org/plugins/styles">Styles</a></li>
+            <li><a href="https://github.com/stylesplugin/styles-font-menu">Styles Font Menu</a></li>
           </ul>
         </li>
       </ul>
@@ -64,23 +131,51 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide>
     <hgroup>
-      <h2>Custa-why?</h2>
+      <h2><span style="color:#6EA8C5">Custa</span>how?</h2>
     </hgroup>
     <article>
       <ul>
-        <li>LIST</li>
-        <li>SUBLIST:
+        <li>Add a section</li>
+        <li>Choose a setting</li>
+        <li>Add a control</li>
+        <li>Use your setting</li>
+      </ul>
+      <ul>
+        <li>Required skills:
           <ul>
-            <li>SUBLIST</li>
+            <li>Advanced PHP &amp; CSS</li>
+            <li>Understanding of storing settings in <code>wp_options</code></li>
           </ul>
         </li>
-      </ul>
+        <li>Alternative: <a href="http://wordpress.org/plugins/styles">Styles plugin</a>
+          <ul>
+            <li>Create color pickers and font pickers with CSS only.</li>
+          </ul>
+        </li>
+    </article>
+  </slide>
+
+  <slide class="segue dark">
+    <hgroup>
+      <h2>Sections &amp; Controls</h2>
+    </hgroup>
+    <article>
+    </article>
+  </slide>
+
+  <slide class="fill nobackground">
+    <hgroup>
+      <h2>Sections &amp; Controls</h2>
+    </hgroup>
+    <article>
+      <img src="lib/img/customizer-section.png" style="float:left;max-height: 115%"/>
+      <img src="lib/img/customizer-control.png" style="float:left;max-height: 115%; margin-left: 70px;"/>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Custa-how?</h2>
+      <h2>Add a section</h2>
     </hgroup>
     <article>
       <ul>
