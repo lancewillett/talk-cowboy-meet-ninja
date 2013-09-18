@@ -1,0 +1,6 @@
+.gist-it-gist .gist-file,
+.gist-it-gist .gist-meta,
+.gist-it-gist .gist-data {
+	background-color: transparent !important;
+	border: 0px none transparent !important;
+}
