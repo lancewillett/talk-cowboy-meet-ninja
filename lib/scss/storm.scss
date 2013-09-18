@@ -37,6 +37,28 @@ slides {
 		margin-left: -550px;
 	}
 
+	.gist-it-gist .gist-file{
+		&, .gist-data {
+			border:0px none transparent;
+		}
+		pre {
+			left:0;
+			font-size: 18px;
+			max-height: 500px;
+		}
+		.gist-meta {
+			padding: 0 20px;
+			background-color: transparent;
+			a {
+				height: 18px;
+				line-height: 18px;
+				font-size: 12px;
+			}
+			span:first-child {
+				display:none;
+			}
+		}
+	}
 }
 
 .with-notes {
