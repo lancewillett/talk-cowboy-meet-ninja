@@ -48,6 +48,53 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide>
     <hgroup>
+      <h2>Audience: Intermediate/Advanced &ldquo;Deselopers&rdquo;</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Defend
+          <ul>
+            <li>Version Control (Git, SVN, Dropbox)</li>
+            <li>Develop, Stage, Deploy</li>
+            <li>Unit Testing</li>
+          </ul>
+        </li>
+        <li>Search
+          <ul>
+            <li>wp-config.php</li>
+            <li>File search</li>
+            <li>Database search</li>
+            <li>Variable inspection: IDEs, FirePHP, Debug Bar</li>
+          </ul>
+        </li>
+        <li>Destroy
+          <ul>
+            <li>Cache-busters</li>
+            <li>Preprocessors</li>
+            <li>IDE's &amp; Lint</li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Structure</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Why would you do this?</li>
+        <li>How will it save you time?</li>
+        <li>Where can you find out more?</li>
+      </ul>
+
+    </article>
+
+  </slide>
+
+  <slide>
+    <hgroup>
       <h2>Paul Clark</h2>
     </hgroup>
     <article>
@@ -73,305 +120,10 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide>
     <hgroup>
-      <h2><span style="color:#6EA8C5">Custa</span>what?</h2>
-    </hgroup>
-    <article>
-      <ul>
-        <li>Introduced in WordPress 3.4</li>
-        <li>Codex: <a href="https://codex.wordpress.org/Theme_Customization_API">codex.wordpress.org/Theme_Customization_API</a>
-      </ul>
-    </article>
-  </slide>
-
-  <slide class="fill nobackground">
-    <img src="lib/img/customizer.png" style="width:auto;max-width:100%;height:96%;position:absolute;top:25px;left:0;"/>
-  </slide>
-
-  <slide class="fill nobackground">
-    <img src="lib/img/customizer-notes.png" style="width:auto;max-width:100%;height:96%;position:absolute;top:25px;left:0;"/>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2><span style="color:#6EA8C5">Custa</span>why?</h2>
-    </hgroup>
-    <article>
-      <ul>
-        <li>Live previews</li>
-        <li>Standard interface<br/>Reduced support because users don't learn a new interface for your theme</li>
-        <li>Core API<br/>Your theme grows with WordPress</li>
-        <li>Code Reuse<br/>Benefit from controls shared by core and other developers</li>
-        <li>Extend with plugins<br/>
-          <ul>
-            <li><a href="https://github.com/x-team/wp-settings-revisions">Settings Revisions</a></li>
-            <li><a href="http://wordpress.org/plugins/styles">Styles</a></li>
-            <li><a href="https://github.com/stylesplugin/styles-font-menu">Styles Font Menu</a></li>
-          </ul>
-        </li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2><span style="color:#6EA8C5">Custa</span>how?</h2>
-    </hgroup>
-    <article>
-      <ul>
-        <li>Add a section</li>
-        <li>Add a setting</li>
-        <li>Add a control</li>
-        <li>Use the setting value!</li>
-      </ul>
-      <ul>
-        <li>Required skills:
-          <ul>
-            <li>Advanced PHP &amp; CSS</li>
-            <li>Understanding of storing settings in <code>wp_options</code></li>
-          </ul>
-        </li>
-        <li>Alternative: <a href="http://wordpress.org/plugins/styles">Styles plugin</a>
-          <ul>
-            <li>Create color pickers and font pickers with CSS only.</li>
-          </ul>
-        </li>
-    </article>
-  </slide>
-
-  <slide class="segue dark">
-    <hgroup>
-      <h2>Sections &amp; Controls</h2>
-    </hgroup>
-  </slide>
-
-  <slide class="nobackground">
-    <hgroup>
-      <h2>Sections &amp; Controls</h2>
-    </hgroup>
-    <article>
-      <img src="lib/img/customizer-section.png" style="float:left;max-height: 115%"/>
-      <img src="lib/img/customizer-control.png" style="float:left;max-height: 115%; margin-left: 70px;"/>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
       <h2>Add a section</h2>
     </hgroup>
     <article>
        <iframe src="examples/embeds/1-add-section.html" class="embed"></iframe>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Add a setting</h2>
-    </hgroup>
-    <article>
-      <iframe src="examples/embeds/1-add-setting.html" class="embed"></iframe>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Add a control</h2>
-    </hgroup>
-    <article>
-      <iframe src="examples/embeds/1-add-control.html" class="embed"></iframe>
-    </article>
-  </slide>
-
-  <slide class="segue dark">
-    <hgroup><h2>Theme Mods vs. Options</h2></hgroup>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Theme Mod</h2>
-    </hgroup>
-    <article>
-      <ul>
-        <li>Handles array of values for you.</li>
-        <li>Scopes settings to your theme.</li>
-        <li>Same data structure as Option (array), but with convenience function <code>get_theme_mod</code></li>
-        <li>Think of them as invidivual options, not an array!</li>
-      </ul>
-      <iframe src="examples/embeds/2-theme-mod.html" class="embed"></iframe>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Option</h2>
-    </hgroup>
-    <article>
-      <ul>
-        <li>Single, generic setting.</li>
-        <li>Typically better to use an array.</li>
-      </ul>
-      <iframe src="examples/embeds/2-option.html" class="embed"></iframe>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Option (array)</h2>
-    </hgroup>
-    <article>
-      <ul>
-        <li>Many settings in one <code>wp_options</code> row.</li>
-        <li>Think of it as an array, not serialized data!</li>
-        <li>Basically the same as <code>theme_mod</code>, but generic.</li>
-      </ul>
-      <iframe src="examples/embeds/2-option-array.html" class="embed"></iframe>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Data Structure</h2>
-    </hgroup>
-    <article>
-      <ul>
-        <li>Serialized data is preferred.</li>
-        <li>Don't manually edit serialized data!
-          <ul><li>Unless you *really* know what you're doing</li></ul>
-        </li>
-        <li>Don't think about the serialization!
-          <ul><li>WordPress handles it for you.</li></ul>
-        </li>
-      </ul>
-      <img src="lib/img/db-theme-mods-vs-options.png" style="width:auto;max-width:100%;max-height:96%;"/>
-    </article>
-  </slide>
-
-  <slide class="segue dark">
-    <hgroup><h2>Use the data!</h2></hgroup>
-  </slide>
-  
-  <slide>
-    <hgroup>
-      <h2>Generated CSS</h2>
-    </hgroup>
-    <article>
-      <iframe src="examples/embeds/3-generate-css.html" class="embed"></iframe>
-    </article>
-  </slide>
-
-
-  <slide class="segue dark">
-    <hgroup><h2>postMessage</h2></hgroup>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Step 1: Change Transport</h2>
-    </hgroup>
-    <article>
-      <iframe src="examples/embeds/4-postmessage-transport.html" class="embed"></iframe>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Step 2: Write JavaScript</h2>
-    </hgroup>
-    <article>
-      <iframe src="examples/embeds/4-javascript.html" class="embed"></iframe>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Step 3: Enqueue JavaScript</h2>
-    </hgroup>
-    <article>
-      <iframe src="examples/embeds/4-enqueue.html" class="embed"></iframe>
-    </article>
-  </slide>
-
-  <slide class="segue dark">
-    <hgroup><h2>Controls</h2></hgroup>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Core Controls</h2>
-    </hgroup>
-    <article>
-      <ul>
-        <li>Radios, Checkboxes, Selects
-          <ul><li>See <a href="http://web-profile.com.ua/wordpress/docs/customization-api/">WebProfile.com</a></li></ul>
-        </li>
-        <li><a href="https://github.com/WordPress/WordPress/blob/797ee34bc36293b084225038e440e6ced230a4a4/wp-includes/class-wp-customize-control.php#L9">WP_Customize_Control</a>
-          <ul>
-            <li><a href="https://github.com/WordPress/WordPress/blob/797ee34bc36293b084225038e440e6ced230a4a4/wp-includes/class-wp-customize-control.php#L318">WP_Customize_Color_Control</a></li>
-            <li><a href="https://github.com/WordPress/WordPress/blob/797ee34bc36293b084225038e440e6ced230a4a4/wp-includes/class-wp-customize-control.php#L401">WP_Customize_Upload_Control</a>
-              <ul>
-                <li><a href="https://github.com/WordPress/WordPress/blob/797ee34bc36293b084225038e440e6ced230a4a4/wp-includes/class-wp-customize-control.php#L459">WP_Customize_Image_Control</a>
-                  <ul>
-                    <li><a href="https://github.com/WordPress/WordPress/blob/797ee34bc36293b084225038e440e6ced230a4a4/wp-includes/class-wp-customize-control.php#L642">WP_Customize_Background_Image_Control</a></li>
-                    <li><a href="https://github.com/WordPress/WordPress/blob/797ee34bc36293b084225038e440e6ced230a4a4/wp-includes/class-wp-customize-control.php#L701">WP_Customize_Header_Image_Control</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup><h2>Moar Controls!</h2></hgroup>
-    <article>
-      <ul>
-        <li><a href="https://github.com/bueltge/Wordpress-Theme-Customizer-Custom-Controls">WordPress Theme Customizer Custom Controls</a>
-          <ul>
-            <li>Category Dropdown</li>
-            <li>Date Picker</li>
-            <li>Layout Picker</li>
-            <li>Menu Dropdown</li>
-            <li>Post Dropdown</li>
-            <li>Tags Dropdown</li>
-            <li>Text Editor</li>
-            <li>Textarea</li>
-            <li>Taxonomy Dropdown</li>
-            <li>User List Dropdown</li>
-          </ul>
-        </li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide class="segue dark">
-    <hgroup><h2>Styles</h2></hgroup>
-  </slide>
-
-  <slide>
-    <hgroup><h2>Why use <a href="http://wordpress.org/plugins/styles/">Styles?</a></h2></hgroup>
-    <article>
-      <ul>
-        <li>Mostly changing colors and fonts</li>
-        <li>Set up many options quickly
-          <ul>
-            <li>postMessage for free</li>
-            <li>1 option == 1 line of code</li>
-          </ul>
-        </li>
-        <li>Code walkthrough: <a href="http://www.youtube.com/playlist?list=PLxj61Fojm1RGevBh10U2qCqjwoH4Awo-P">Add support to your themes</a></li>
-        <li>It's on <a href="http://wordpress.org/plugins/styles/">wordpress.org</a></li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Styles Setup: customize.json</h2>
-    </hgroup>
-    <article>
-       <iframe src="examples/embeds/styles-twentythirteen.html" class="embed"></iframe>
     </article>
   </slide>
 
