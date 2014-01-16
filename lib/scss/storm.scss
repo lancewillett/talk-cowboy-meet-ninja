@@ -1,5 +1,9 @@
 slides {
 
+	.gdbar {
+		background: #000;
+	}
+
 	/* Slides reference */
 	#contact-hud {
 		transition:width, margin;
@@ -16,7 +20,7 @@ slides {
 		font-size: 18px;
 		line-height: 1.4;
 		font-family: 'Panic Sans', 'Monaco', 'Menlo', 'Consolas', monospace;
-		background-color: #422E2F;
+		background-color: #000;
 		z-index:999;
 		div {
 			margin: 0 auto;
@@ -28,6 +32,9 @@ slides {
 				color: #fff;
 				text-decoration: none;
 				border:none;
+				&:hover {
+					color: #F50000 !important;
+				}
 			}
 		}
 	}	
@@ -113,7 +120,7 @@ iframe.embed {
 	background:transparent;
 }
 
-.thank-you-slide a:hover { color: #422E2F !important; }
+.thank-you-slide a:hover { color: #F50000 !important; }
 
 
 
