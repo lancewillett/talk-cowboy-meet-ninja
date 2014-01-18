@@ -304,7 +304,30 @@ URL: https://code.google.com/p/io-2012-slides
     </hgroup>
     <article>
 
-      Hide Your Errors!
+      Split <code>wp-config.php</code> into development and live versions.
+      <iframe src="examples/embeds/wp-config-1.html" class="embed"></iframe>
+
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>wp-config.php: development</h2>
+    </hgroup>
+    <article>
+
+      <iframe src="examples/embeds/wp-config-dev.html" class="embed"></iframe>
+
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>wp-config.php: live</h2>
+    </hgroup>
+    <article>
+
+      <iframe src="examples/embeds/wp-config-live.html" class="embed"></iframe>
 
     </article>
   </slide>
@@ -357,6 +380,26 @@ URL: https://code.google.com/p/io-2012-slides
           <a href="https://twitter.com/search?q=%23cowboymeetninja&amp;src=hash">#cowboymeetninja</a>
         </p>
       </blockquote>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Hiding Test Sites</h2>
+    </hgroup>
+    <article>
+      
+      <ul>
+        <li>Discourage Search Engines
+          <ul>
+            <li><code>WP Admin > Settings > Reading</code></li>
+          </ul>
+        </li>
+        <li>Plugin: <a href="http://wordpress.org/plugins/wp-require-login/">wp-require-login</a></li>
+        <li>Plugin: <a href="http://wordpress.org/plugins/maintenance-mode/">Maintenance Mode</a></li>
+        <li>Overboard: <code>.htaccess</code> login or IP restriction</li>
+      </ul>
+
     </article>
   </slide>
 
