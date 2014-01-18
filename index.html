@@ -46,6 +46,46 @@ URL: https://code.google.com/p/io-2012-slides
     </hgroup>
   </slide>
 
+  <slide>
+    <hgroup>
+      <h2>This Talk</h2>
+    </hgroup>
+    <article>
+
+      <p>Target Audience: Intermediate+
+        <ul>
+          <li>Development Environments
+            <ul><li>Transfer Strategies</li></ul></li>
+          <li>Version Control</li>
+          <li>Error Reporting
+            <ul>
+              <li>Beginner, Intermediate, Advanced</li>
+              <li>Local vs. Live</li>
+            </ul>
+          </li>
+          <li>Avoiding Search Engines</li>
+          <li>Theme/Plugin dependencies</li>
+        </ul>
+      </p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Paul Clark</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>WordPress core contributor</li>
+        <li>Developing WordPress sites since 2006 (~2.0.1)</li>
+        <li>12 plugins on WordPress.org, 20+ <a href="http://github.com/pdclark">on Github</a></li>
+        <li>Speaker at <a href="http://tedxtalks.ted.com/video/Getting-From-I-Have-a-Dream-to">TEDx</a> and WordCamps in LA, Seattle, Portland, and Phoenix.
+          <ul><li>More talks: <a href="http://pdclark.com">pdclark.com</a></li></ul>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
   <slide class="segue dark">
     <article>
       <blockquote class="twitter-tweet">
@@ -150,6 +190,19 @@ URL: https://code.google.com/p/io-2012-slides
         <img src="http://imgs.xkcd.com/comics/sandwich.png" />
       </a></p>
 
+    </article>
+  </slide>
+
+  <slide class="segue dark">
+    <article>
+      <blockquote class="twitter-tweet">
+        <p>
+          The hosts file doesn't have to point to local. You can use it to test remote servers when migrating.
+        </p>
+        <p class="twitter-tags">
+          <a href="https://twitter.com/search?q=%23cowboymeetninja&amp;src=hash">#cowboymeetninja</a>
+        </p>
+      </blockquote>
     </article>
   </slide>
 
@@ -334,6 +387,30 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide>
     <hgroup>
+      <h2>Display errors only to you</h2>
+    </hgroup>
+    <article>
+
+      <iframe src="examples/embeds/var-dump.html" class="embed"></iframe>
+
+    </article>
+  </slide>
+
+  <slide class="segue dark">
+    <article>
+      <blockquote class="twitter-tweet">
+        <p>
+          There are *much* nicer places to see errors than on your site! Take a look at FireLogger or PhpStorm. 
+        </p>
+        <p class="twitter-tags">
+          <a href="https://twitter.com/search?q=%23cowboymeetninja&amp;src=hash">#cowboymeetninja</a>
+        </p>
+      </blockquote>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
       <h2>Error Output: Intermediate</h2>
     </hgroup>
     <article>
@@ -374,7 +451,7 @@ URL: https://code.google.com/p/io-2012-slides
     <article>
       <blockquote class="twitter-tweet">
         <p>
-          Test sites do not belong in Google.
+          Pro Tip: Dummy content does help your Google ranking.
         </p>
         <p class="twitter-tags">
           <a href="https://twitter.com/search?q=%23cowboymeetninja&amp;src=hash">#cowboymeetninja</a>
@@ -403,135 +480,50 @@ URL: https://code.google.com/p/io-2012-slides
     </article>
   </slide>
 
-  <slide>
-    <hgroup>
-      <h2>Audience: Intermediate/Advanced &ldquo;Deselopers&rdquo;</h2>
-    </hgroup>
-    <article>
-      <ul>
-        <li>Defend
-          <ul>
-            <li>Version Control (Git, SVN, Dropbox)</li>
-            <li>Develop, Stage, Deploy</li>
-            <li>Unit Testing</li>
-            <li>In a pinch... debugging live</li>
-          </ul>
-        </li>
-        <li>Search
-          <ul>
-            <li>wp-config.php</li>
-            <li>File search</li>
-            <li>Database search</li>
-            <li>Variable inspection: IDEs, FirePHP, Debug Bar</li>
-          </ul>
-        </li>
-        <li>Destroy
-          <ul>
-            <li>Cache-busters</li>
-            <li>Preprocessors</li>
-            <li>IDE's &amp; Lint</li>
-          </ul>
-        </li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Structure</h2>
-    </hgroup>
-    <article>
-      <ul>
-        <li>Why would you do this?</li>
-        <li>How will it save you time?</li>
-        <li>Where can you find out more?</li>
-      </ul>
-
-    </article>
-
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Paul Clark</h2>
-    </hgroup>
-    <article>
-      <ul>
-        <li>WordPress core contributor</li>
-        <li>Developing WordPress sites since 2006 (~2.0.1)</li>
-        <li>12 plugins on WordPress.org, 20+ <a href="http://github.com/pdclark">on Github</a></li>
-        <li>Created <a href="http://wordpress.org/plugins/styles">Styles</a>, a plugin that abstracts porttions of the WordPress Customizer API.</li>
-        <li>Speaker at <a href="http://tedxtalks.ted.com/video/Getting-From-I-Have-a-Dream-to">TEDx</a> and WordCamps in LA, Seattle, Portland, and Phoenix.
-          <ul><li>More talks: <a href="http://pdclark.com">pdclark.com</a></li></ul>
-        </li>
-      </ul>
-    </article>
-  </slide>
-
-<!--
-
-Common WordPress pitfalls:
-
-  Hosts file
-X function exists
-X Namespacing 
-X site breaks if plugin/theme changed
-X shortcodes & actions vs. functions in themes
-  isset
-  disabling notices
-  outputting errors
-  enqueue/deenqueue
-  javascript errors
-  console.log (ie7)
-  Caches
-  Memory limits
-  .htaccess blacklist
-  wp-load vs. wp-ajax vs. endpoints
-  WordPress code formatting
-  init / plugins loaded
-  The loop
-  Consistency: code formatting
-  Transients
-
-Cowboy: Crashes with a BANG
-Ninja: Fixes in the night
-
--->
-
-  <slide>
-    <hgroup><h2>Functions in theme files</h2></hgroup>
-    <article>
-      Cowboy
-      <pre class="prettyprint lang-php"><code>
-      // Plugin
-      function example() {
-        return 'Great example!';
-      }
-
-      // Theme
-      &lt;h2&gt;&lt;?php echo example(); ?&gt;&lt;/h2&gt;
-      </code></pre>
-    </article>
-  </slide>
-
-<!--
   <slide class="segue dark">
-    <hgroup>
-      <h2>About the Customizer</h2>
-    </hgroup>
     <article>
+      <blockquote class="twitter-tweet">
+        <p>
+          Smart developers remember to eat.
+        </p>
+        <p class="twitter-tags">
+          <a href="https://twitter.com/search?q=%23cowboymeetninja&amp;src=hash">#cowboymeetninja</a>
+        </p>
+      </blockquote>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Add a section</h2>
+      <h2>Grab Bag</h2>
     </hgroup>
     <article>
-       <iframe src="examples/embeds/1-add-section.html" class="embed"></iframe>
+
+      <p>
+        Code Walkthroughs
+        <ul>
+          <li>Plugins in Themes: <a href="https://github.com/pdclark/talk-cowboy-meet-ninja/blob/gh-pages/examples/functions-in-themes/functions-in-themes.php">Don't crash when plugins get turned off</a></li>
+          <li>Namespacing: <a href="https://github.com/pdclark/talk-cowboy-meet-ninja/blob/gh-pages/examples/namespacing/namespacing.php">Don't crash because of conflicts</a></li>
+          <li>Shortcodes &amp; Filters: <a href="https://github.com/pdclark/talk-cowboy-meet-ninja/blob/gh-pages/examples/content-shortcodes-filters/content-shortcodes-filters.php">Don't put code in the WordPress editor</a></li>
+        </ul>
+      </p>
+
+      <p>
+        Q&amp;A
+        <ul>
+          <li>Notices avoided with <code>isset</code> &amp; typecasting</li>
+          <li>Avioding script &amp; style conflicts: wp_enqueue</li>
+          <li>Don't replace jQuery!</li>
+          <li>console.log() with crash IE7</li>
+          <li>Plugins: Wait for init / plugins_loaded</li>
+          <li>Caches: Working around browser cache, server cache, and CDNs</li>
+          <li>wp-load vs. wp-ajax vs. endpoints</li>
+        </ul>
+
+      </p>
+
     </article>
   </slide>
--->
 
   <slide class="thank-you-slide segue nobackground">
     <aside class="gdbar right"><img src="lib/img/logo-10up.png"></aside>
