@@ -1,3 +1,38 @@
+@import url(http://fonts.googleapis.com/css?family=Lustria);
+
+h1,h2,h3, .twitter-tweet  {
+	font-family: 'Lustria', serif;
+}
+
+a {
+	border:none !important;
+}
+small {
+	font-size: .7em;
+}
+
+.twitter-tweet {
+	margin-top: 10%;
+	font-size: 48px;
+	line-height: 1.2;
+	color: #fff;
+	p {
+		margin-bottom: .3em;
+	}
+	.twitter-tags {
+		text-align: right;
+		font-size: .66em;
+		a {
+			color: #ccc;
+			text-decoration: none;
+			// border-bottom: 1px solid #FF0000;
+			&:hover {
+				color: #FF0000 !important;
+			}
+		}
+	}
+}
+
 slides {
 
 	.gdbar {

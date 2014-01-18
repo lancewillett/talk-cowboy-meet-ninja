@@ -25,13 +25,13 @@ URL: https://code.google.com/p/io-2012-slides
   <!-- Turn off alerts from iFrame XSS -->
   <script>function alert(){return false}</script>
 </head>
-<body style="opacity: 0">
+<body style="opacity: 0" onload="prettyPrint()">
 
 <slides class="layout-widescreen">
 
   <div id="contact-hud">
     <div>
-      twitter: <a href="http://twitter.com/pdclark">@pdclark</a>
+      twitter: <a href="http://twitter.com/pdclark">@pdclark</a> <a href="https://twitter.com/search?q=%23cowboymeetninja&amp;src=hash">#cowboymeetninja</a>
       <a class="slide-link" href="http://pdclark.com/wcphx2014">pdclark.com/wcphx2014</a></span>
     </div>
   </div>
@@ -46,6 +46,271 @@ URL: https://code.google.com/p/io-2012-slides
     </hgroup>
   </slide>
 
+  <slide class="segue dark">
+    <article>
+      <blockquote class="twitter-tweet">
+        <p>
+          Are you being paid for a website? Congratulations! You&#39;re a professional!
+        </p>
+        <p class="twitter-tags">
+          <a href="https://twitter.com/search?q=%23cowboymeetninja&amp;src=hash">#cowboymeetninja</a>
+        </p>
+      </blockquote>
+    </article>
+  </slide>
+
+  <slide class="segue dark">
+    <article>
+      <blockquote class="twitter-tweet">
+        <p>
+          Professionals protect their clients. Period.
+        </p>
+        <p class="twitter-tags">
+          <a href="https://twitter.com/search?q=%23cowboymeetninja&amp;src=hash">#cowboymeetninja</a>
+        </p>
+      </blockquote>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Avoid...</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>White Screens of Death (WSOD)</li>
+        <li>PHP Errors (warnings, notices)</li>
+        <li>Server errors (404, 501)</li>
+        <li>Incomplete content: "Coming Soon", Test pages</li>
+        <li>Dev sites in search</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="segue dark">
+    <article>
+      <blockquote class="twitter-tweet">
+        <p>
+          A developer without a dev environment is a carpenter without a workshop. Don't make furniture in your client's living room.
+        </p>
+        <p class="twitter-tags">
+          <a href="https://twitter.com/search?q=%23cowboymeetninja&amp;src=hash">#cowboymeetninja</a>
+        </p>
+      </blockquote>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Set up a dev environment!!!</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>make.wordpress.org: <a href="http://make.wordpress.org/core/handbook/installing-a-local-server/" target="_blank">Installing a Local Server</a>
+          <ul>
+            <li><a href="http://make.wordpress.org/core/handbook/installing-a-local-server/installing-xampp/">XAMPP</a> (Win, Mac, Linux)</li>
+            <li><a href="http://make.wordpress.org/core/handbook/installing-a-local-server/installing-mamp/">MAMP</a> (Mac)</li>
+            <li><a href="http://make.wordpress.org/core/handbook/installing-a-local-server/installing-wampserver/">WAMP</a> (Win)</li>
+          </ul>
+        </li>
+        <li>WordPress-specific environments
+          <ul>
+            <li><a href="http://make.wordpress.org/core/handbook/installing-a-local-server/installing-desktopserver/">DesktopServer</a></li>
+            <li><a href="https://github.com/10up/varying-vagrant-vagrants">Varying Vagrant Vagrants</a> (Advanced; nginx!)</li>
+        </li>
+
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>DesktopServer</h2>
+    </hgroup>
+    <article>
+       <p><img style="width:200px; float:left; margin-right: 10px;" src="http://1.gravatar.com/avatar/984914bb5883380eca5d7cdb8fd8ab89?s=200&d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D100&r=G" />
+        <a href="http://2014.phoenix.wordcamp.org/schedule/#wcorg-speaker-marc-benzakein">Marc Benzakein</a><br/>
+        Speaker &amp; SeverPress Team Member</p>
+
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Varying Vagrant Vagrants (VVV)</h2>
+    </hgroup>
+    <article>
+
+      <p><img style="width:200px; float:left; margin-right: 10px;" src="http://0.gravatar.com/avatar/46093583d8895095adb1b0071c505af2?s=200&d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D100&r=G" />
+        <a href="http://2014.phoenix.wordcamp.org/schedule/#wcorg-speaker-ericmann">Eric Mann</a><br/>
+        Speaker &amp; VVV Contributor</p>
+
+      <p style="clear:both; text-align:right;"><a href="http://xkcd.com/149/">
+        <small>xkcd.com/149</small>
+        <img src="http://imgs.xkcd.com/comics/sandwich.png" />
+      </a></p>
+
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Anatomy of a WordPress install</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>WordPress core</li>
+        <li>Database</li>
+        <li><code>wp-content/</code>
+          <ul>
+            <li><code>plugins/</code></li>
+            <li><code>themes/</code></li>
+            <li><code>uploads/</code></li>
+          </ul>
+        </li>
+        <li><code>wp-config.php</code></li>
+        <li><code>.htaccess</code> (permalinks)</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Transfer Toolbox</h2>
+    </hgroup>
+    <article>
+      <p>
+        Files
+        <ul>
+          <li>Git, SVN, <a href="https://github.com/aizatto/git-deploy">Git+FTP</a></li>
+          <li>Command Line: <a href="http://talks.pdclark.com/wcphx2013/dev-environments.php#13">rsync</a>, <a href="http://talks.pdclark.com/wcphx2013/dev-environments.php#14">wget</a>, <a href="https://github.com/capistrano/capistrano">Capistrano</a></li>
+          <li></li>
+          <li><a href="http://wordpress.org/plugins/uploads-by-proxy/">Uploads by Proxy</a></li>
+          <li><a href="http://wordpress.org/plugins/busted/">Busted</a></li>
+        </ul>
+      </p>
+
+      <p>
+        Database
+        <ul>
+          <li><a href="http://wordpress.org/plugins/wp-migrate-db/">WP Migrate DB</a> (+ Uploads)</li>
+          <li><a href="http://phpminiadmin.sourceforge.net/">phpMiniAdmin</a></li>
+          <li><a href="http://talks.pdclark.com/wcphx2013/dev-environments.php#18">Multiple DB's in wp-config.php</a></li>
+          <li><a href="http://talks.pdclark.com/wcphx2013/dev-environments.php#19">Command Line</a></li>
+        </ul>
+      </p>
+
+    </article>
+  </slide>
+
+  <slide class="segue dark">
+    <article>
+      <blockquote class="twitter-tweet">
+        <p>
+          Do you create more than one version of ANYTHING? Hate transferring files? Hate getting hacked? Use Git.
+        </p>
+        <p class="twitter-tags">
+          <a href="https://twitter.com/search?q=%23cowboymeetninja&amp;src=hash">#cowboymeetninja</a>
+        </p>
+      </blockquote>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Advantages of Version Control</h2>
+    </hgroup>
+    <article>
+
+      <ul>
+        <li>See changes by clients or hackers</li>
+        <li>Share changes with coworkers</li>
+        <li>Compressed transfers</li>
+        <li>Instant deploys!!!</li>
+        <li>Instant reverts!!!</li>
+        <li>2 backups of everything, always</li>
+      </ul>
+
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Versions of Version Control</h2>
+    </hgroup>
+    <article>
+      
+      <ul>
+        <li>Git</li>
+        <li>SVN</li>
+        <li>Dropbox</li>
+        <li><s>FTP</s></li>
+        <li><s>functions.php.old</s></li>
+        <li><s>functions.php.new</s></li>
+        <li><s>functions.php.newer</s></li>
+        <li><s>functions.php.newest</s></li>
+      </ul>
+
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Git Toolbox</h2>
+    </hgroup>
+    <article>
+      <p>
+        Tutorials
+        <ul>
+          <li><a href="https://www.codeschool.com/courses/try-git">CodeSchool: Try Git</a></li>
+          <li><a href="http://roybarber.com/version-controlling-wordpress/">Version Controlling WordPress</a></li>
+        </ul>
+      </p>
+      <p>
+        Repos
+        <ul>
+          <li><a href="http://make.wordpress.org/core/2014/01/15/git-mirrors-for-wordpress/">Official WordPress Core</a>, <a href="https://github.com/wordpress/wordpress">github.com/wordpress/wordpress</a></li>
+          <li><a href="https://github.com/wp-plugins">github.com/wp-plugins</a></li>
+        </ul>
+      </p>
+      <p>
+        Scripts
+        <ul>
+          <li><a href="http://cdn.wpengine.com/wp-content/uploads/2013/10/recommended-gitignore-wp.txt">WPEngine-recommended .gitignore</a></li>
+          <li><a href="http://nvie.com/posts/a-successful-git-branching-model/">git-flow</a></li>
+          <li><a href="https://github.com/brainstormmedia/deploy-plugin-to-wordpress-dot-org">deploy-plugin-to-wordpress-dot-org</a></li>
+          <li><a href="https://github.com/GaryJones/wordpress-plugin-git-flow-svn-deploy">wordpress-plugin-git-flow-svn-deploy</a></li>
+        </ul>
+      </p>
+    </article>
+  </slide>
+
+  <slide class="segue dark">
+    <article>
+      <blockquote class="twitter-tweet">
+        <p>
+          Error messages are for programmers, not users.
+        </p>
+        <p class="twitter-tags">
+          <a href="https://twitter.com/search?q=%23cowboymeetninja&amp;src=hash">#cowboymeetninja</a>
+        </p>
+      </blockquote>
+    </article>
+  </slide>
+
+  <slide class="segue dark">
+    <article>
+      <blockquote class="twitter-tweet">
+        <p>
+          Test sites do not belong in Google.
+        </p>
+        <p class="twitter-tags">
+          <a href="https://twitter.com/search?q=%23cowboymeetninja&amp;src=hash">#cowboymeetninja</a>
+        </p>
+      </blockquote>
+    </article>
+  </slide>
+
   <slide>
     <hgroup>
       <h2>Audience: Intermediate/Advanced &ldquo;Deselopers&rdquo;</h2>
@@ -57,6 +322,7 @@ URL: https://code.google.com/p/io-2012-slides
             <li>Version Control (Git, SVN, Dropbox)</li>
             <li>Develop, Stage, Deploy</li>
             <li>Unit Testing</li>
+            <li>In a pinch... debugging live</li>
           </ul>
         </li>
         <li>Search
@@ -110,6 +376,53 @@ URL: https://code.google.com/p/io-2012-slides
     </article>
   </slide>
 
+<!--
+
+Common WordPress pitfalls:
+
+  Hosts file
+X function exists
+X Namespacing 
+X site breaks if plugin/theme changed
+X shortcodes & actions vs. functions in themes
+  isset
+  disabling notices
+  outputting errors
+  enqueue/deenqueue
+  javascript errors
+  console.log (ie7)
+  Caches
+  Memory limits
+  .htaccess blacklist
+  wp-load vs. wp-ajax vs. endpoints
+  WordPress code formatting
+  init / plugins loaded
+  The loop
+  Consistency: code formatting
+  Transients
+
+Cowboy: Crashes with a BANG
+Ninja: Fixes in the night
+
+-->
+
+  <slide>
+    <hgroup><h2>Functions in theme files</h2></hgroup>
+    <article>
+      Cowboy
+      <pre class="prettyprint lang-php"><code>
+      // Plugin
+      function example() {
+        return 'Great example!';
+      }
+
+      // Theme
+      &lt;h2&gt;&lt;?php echo example(); ?&gt;&lt;/h2&gt;
+      </code></pre>
+    </article>
+  </slide>
+
+<!--
   <slide class="segue dark">
     <hgroup>
       <h2>About the Customizer</h2>
@@ -126,6 +439,7 @@ URL: https://code.google.com/p/io-2012-slides
        <iframe src="examples/embeds/1-add-section.html" class="embed"></iframe>
     </article>
   </slide>
+-->
 
   <slide class="thank-you-slide segue nobackground">
     <aside class="gdbar right"><img src="lib/img/logo-10up.png"></aside>
